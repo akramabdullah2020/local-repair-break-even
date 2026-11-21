@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "When Does Local Path Repair Pay Off? Code and data"
+type: software
+authors:
+  - family-names: "Abdullah"
+    given-names: "Akram Ahmed Ahmed"
+version: "1.0.0"
+date-released: "2026-11-21"
+license: MIT
+keywords:
+  - path replanning
+  - local path repair
+  - D* Lite
+  - mobile robot navigation
+  - break-even analysis
+# doi: add the Zenodo DOI here after archiving the v1.0.0 release
