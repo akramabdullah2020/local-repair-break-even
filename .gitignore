@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+
+# Local / private working material (not part of the public release)
+_archive/
+tmp/
+reports/
+docs/
+tools/
+README_AR.md
+paper/README_AR.md
+.claude/
+
+# Moving AI maps are not redistributed: run scripts/download_movingai.py
+data/movingai/*/
+!data/movingai/README.md
+
+# Superseded or v1 results
+results/v2_events/_superseded/
+results/benchmark_summary.csv
+results/fixed_results.csv
+results/*.png
+results/*.gif
