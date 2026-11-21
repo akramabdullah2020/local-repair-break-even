@@ -1,5 +1,7 @@
 # When Does Local Path Repair Pay Off?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24428969.svg)](https://doi.org/10.5281/zenodo.24428969)
+
 Code and data for the paper **"When Does Local Path Repair Pay Off? A Break-Even Analysis of Local Repair versus Global and Incremental Replanning for Mobile Robots with a Limited Perception Range"**.
 
 When a robot perceives a new obstacle on its path, it can repair the invalidated segment locally or replan to the goal (from scratch with A\*, or incrementally with D\* Lite). This repository contains:
@@ -76,7 +78,7 @@ Moving AI maps are **not redistributed** here; `scripts/download_movingai.py` fe
 
 ## Citation
 
-See `CITATION.cff`. A DOI will be added on archival at Zenodo.
+See `CITATION.cff`. Archived at Zenodo: version v1.0.0 has DOI [10.5281/zenodo.24428970](https://doi.org/10.5281/zenodo.24428970); [10.5281/zenodo.24428969](https://doi.org/10.5281/zenodo.24428969) always resolves to the latest version.
 
 ## License
 

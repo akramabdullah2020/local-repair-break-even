@@ -14,4 +14,5 @@ keywords:
   - D* Lite
   - mobile robot navigation
   - break-even analysis
-# doi: add the Zenodo DOI here after archiving the v1.0.0 release
+doi: "10.5281/zenodo.24428969"
+repository-code: "https://github.com/akramabdullah2020/local-repair-break-even"

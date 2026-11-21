@@ -4,7 +4,7 @@ Source: https://movingai.com/benchmarks/grids.html — N. R. Sturtevant, "Benchm
 Pathfinding," *IEEE Transactions on Computational Intelligence and AI in Games*, 4(2):144–148, 2012.
 Cite this paper when using the maps.
 
-Downloaded 2026-11-20 (archives kept in `_dl/`):
+The maps are not redistributed in this repository. Run `python scripts/download_movingai.py` to fetch them:
 
 | folder | archive | used families (src/movingai.py) |
 |---|---|---|
@@ -15,5 +15,4 @@ Downloaded 2026-11-20 (archives kept in `_dl/`):
 Maps larger than the experiment's size are cropped to a random `size × size` window whose largest
 free component covers ≥ 30% of the window (`movingai.crop`). Passable cells: `.`, `G`, `S`.
 
-To re-create this folder: download the three archives into `_dl/` and extract only the `.map` files
-into `room/`, `maze/`, `street/`.
+The script extracts only the `.map` files into `room/`, `maze/` and `street/`.

@@ -12,7 +12,6 @@ docs/
 tools/
 README_AR.md
 paper/README_AR.md
-.claude/
 
 # Moving AI maps are not redistributed: run scripts/download_movingai.py
 data/movingai/*/
