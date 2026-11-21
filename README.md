@@ -78,7 +78,7 @@ Moving AI maps are **not redistributed** here; `scripts/download_movingai.py` fe
 
 ## Citation
 
-See `CITATION.cff`. Archived at Zenodo: version v1.0.0 has DOI [10.5281/zenodo.24428970](https://doi.org/10.5281/zenodo.24428970); [10.5281/zenodo.24428969](https://doi.org/10.5281/zenodo.24428969) always resolves to the latest version.
+See `CITATION.cff`. Archived at Zenodo: the version used for the paper is v1.0.1, DOI [10.5281/zenodo.24429438](https://doi.org/10.5281/zenodo.24429438); [10.5281/zenodo.24428969](https://doi.org/10.5281/zenodo.24428969) always resolves to the latest version.
 
 ## License
 

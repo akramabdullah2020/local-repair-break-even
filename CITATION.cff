@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Abdullah"
     given-names: "Akram Ahmed Ahmed"
-version: "1.0.0"
-date-released: "2026-11-21"
+version: "1.0.1"
+date-released: "2026-11-22"
 license: MIT
 keywords:
   - path replanning
