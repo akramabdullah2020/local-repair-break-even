@@ -1,0 +1,24 @@
+{
+  "n_train_events": 20449,
+  "tau": 0.55,
+  "train_auc": 0.9543,
+  "features": [
+    "risk_ratio",
+    "risk_prox",
+    "risk_bottle",
+    "n_invalid",
+    "invalid_span",
+    "splice_in_window",
+    "window_free",
+    "R",
+    "first_invalid",
+    "n_blocked_changed",
+    "n_changed"
+  ],
+  "c_l_by_R": {
+    "3": 107.3,
+    "5": 251.5,
+    "8": 648.3,
+    "12": 1126.5
+  }
+}
