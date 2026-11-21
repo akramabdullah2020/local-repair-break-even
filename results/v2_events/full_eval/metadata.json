@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-11-20T22:09:12+00:00",
+  "python": "3.11.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "seeds": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "split": "eval",
+  "predictor": "results/v2_events/predictor.pkl",
+  "families": [
+    "room8",
+    "room16",
+    "room32",
+    "maze4",
+    "maze8",
+    "maze16",
+    "street"
+  ],
+  "sizes": [
+    50,
+    100,
+    150,
+    200
+  ],
+  "densities": [
+    0.05,
+    0.15,
+    0.25
+  ],
+  "radii": [
+    3,
+    5,
+    8,
+    12
+  ],
+  "blockages": [
+    "point",
+    "wall",
+    "barrier",
+    "multi"
+  ],
+  "n_episodes": 17472,
+  "n_events": 48422,
+  "runtime_s": 5468.5,
+  "code_sha256": {
+    "src/__init__.py": "bedf9eca4b3b6285",
+    "src/environment.py": "6619a616b010d451",
+    "src/event_eval.py": "f6b3477b77b183ab",
+    "src/movingai.py": "ee0ba0b1e68a5d62",
+    "src/planners/__init__.py": "8a323e6dc011a57b",
+    "src/planners/a_star.py": "89dfd0c7e95b1b6f",
+    "src/planners/d_star_lite.py": "c2ae29ae3e08e353",
+    "src/planners/risk_adaptive_planner.py": "ac003aaa268539c9",
+    "src/policies.py": "696d8c2b22cc2f7c",
+    "src/scenarios.py": "17adfbae42f89c48",
+    "src/scenarios_v2.py": "51cdd31a08e55781",
+    "src/simulation.py": "97946588049c495e",
+    "src/validation.py": "c58371d9c2c7c6a1"
+  }
+}
