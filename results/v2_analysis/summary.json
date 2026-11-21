@@ -1,0 +1,55 @@
+{
+  "n_eval_episodes": 17472,
+  "n_eval_events": 48422,
+  "eval_success_rate": 0.9990842490842491,
+  "eval_collisions": 0,
+  "dstar_cost_mismatch_events": 0,
+  "break_even_agreement_astar": {
+    "cells": 576,
+    "agreement": 0.9756944444444444,
+    "weighted_by_events": 0.967741935483871,
+    "share_cells_repair_pays": 0.7604166666666666
+  },
+  "break_even_agreement_dstar": {
+    "cells": 576,
+    "agreement": 0.9079861111111112,
+    "weighted_by_events": 0.9235471479905828,
+    "share_cells_repair_pays": 0.5746527777777778
+  },
+  "predictor": {
+    "auc": 0.9477641439656099,
+    "brier": 0.0644602050864041,
+    "auc_risk_v1": 0.4575103678472392,
+    "share_events_risk_over_045": 0.004646648217752261,
+    "base_rate_fail": 0.797240923547148,
+    "pred_ms_median": 0.8766999999352265,
+    "risk_ms_median": 0.2630000017234124
+  },
+  "path_increase_pct_B": {
+    "n": 9818,
+    "mean": 6.619976410134491,
+    "median": 3.5114921608233938,
+    "p90": 15.655560177360705,
+    "share_zero": 0.055408433489509065
+  },
+  "path_increase_pct_U": {
+    "n": 29221,
+    "mean": 7.1554264084917865,
+    "median": 2.779036913356797,
+    "p90": 19.303179490244958,
+    "share_zero": 0.13500564662400327
+  },
+  "unbounded_repair": {
+    "fail_rate": 0.39653463301804964,
+    "mean_edges_when_fails": 0.0,
+    "mean_edges_when_ok": 937.9796721535881
+  },
+  "episodes_without_events": 0,
+  "uncharged_dstar_edges_total": 0,
+  "ms_median": {
+    "G": 14.156450002701604,
+    "D": 6.3551000002917135,
+    "B": 0.520050001796335,
+    "U": 0.3680999980133492
+  }
+}

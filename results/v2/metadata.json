@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-11-20T19:08:09+00:00",
+  "python": "3.11.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "args": {
+    "out": "results/v2",
+    "seeds": [
+      42,
+      101,
+      202,
+      303,
+      404,
+      500,
+      520,
+      540,
+      560,
+      580,
+      600,
+      620,
+      640,
+      660,
+      680,
+      700,
+      720,
+      740,
+      760,
+      780
+    ],
+    "radii": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "scenarios": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "size": 30,
+    "max_steps": 200,
+    "quick": false
+  },
+  "n_runs": 2400,
+  "n_events": 2158,
+  "skipped_no_initial_path": 0,
+  "runtime_s": 28.4,
+  "code_sha256": {
+    "src/__init__.py": "bedf9eca4b3b6285",
+    "src/environment.py": "6619a616b010d451",
+    "src/movingai.py": "ee0ba0b1e68a5d62",
+    "src/planners/__init__.py": "8a323e6dc011a57b",
+    "src/planners/a_star.py": "536de1b999dd65e2",
+    "src/planners/d_star_lite.py": "c2ae29ae3e08e353",
+    "src/planners/risk_adaptive_planner.py": "a1ac70b26fc2f842",
+    "src/scenarios.py": "17adfbae42f89c48",
+    "src/scenarios_v2.py": "51cdd31a08e55781",
+    "src/simulation.py": "97946588049c495e",
+    "src/validation.py": "c58371d9c2c7c6a1"
+  }
+}
