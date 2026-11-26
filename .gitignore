@@ -12,6 +12,8 @@ docs/
 tools/
 README_AR.md
 paper/README_AR.md
+# The manuscript is not distributed in this repository (code and data only)
+paper/
 
 # Moving AI maps are not redistributed: run scripts/download_movingai.py
 data/movingai/*/

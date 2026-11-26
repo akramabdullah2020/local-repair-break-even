@@ -1,0 +1,103 @@
+{
+ "created_utc": "2026-11-26T20:28:49+00:00",
+ "mode": "memory",
+ "seeds": [
+  3
+ ],
+ "n_episodes": 832,
+ "n_events": 2159,
+ "workers": 7,
+ "wall_s": 2373.4,
+ "python": "3.11.7",
+ "platform": "Windows-10-10.0.19045-SP0",
+ "processor": "Intel64 Family 6 Model 94 Stepping 3, GenuineIntel",
+ "cpu_count": 8,
+ "peak_alloc_per_call": {
+  "astar": {
+   "n_calls": 2991,
+   "median_kib": 171.33203125,
+   "p95_kib": 1952.04296875,
+   "max_kib": 2978.30859375
+  },
+  "dstar_initial_plan": {
+   "n_calls": 4992,
+   "median_kib": 541.19921875,
+   "p95_kib": 2479.13671875,
+   "max_kib": 2621.68359375
+  },
+  "dstar_plan": {
+   "n_calls": 10020,
+   "median_kib": 10.12109375,
+   "p95_kib": 45.07421875,
+   "max_kib": 676.02734375
+  },
+  "dstar_update": {
+   "n_calls": 14616,
+   "median_kib": 1.49609375,
+   "p95_kib": 4.28515625,
+   "max_kib": 81.56640625
+  },
+  "repair_bounded": {
+   "n_calls": 2159,
+   "median_kib": 4.19140625,
+   "p95_kib": 36.233593749999976,
+   "max_kib": 91.80859375
+  },
+  "repair_unbounded": {
+   "n_calls": 2159,
+   "median_kib": 2.63671875,
+   "p95_kib": 36.2625,
+   "max_kib": 1662.53515625
+  },
+  "dstar_state_after_initial_plan": {
+   "n": 832,
+   "median_kib": 388.55078125,
+   "p95_kib": 2249.41015625,
+   "max_kib": 2391.42578125
+  }
+ },
+ "max_kib_by_size": {
+  "astar_max_kib": {
+   "50": 438.1,
+   "100": 771.7,
+   "150": 2867.5,
+   "200": 2978.3
+  },
+  "dstar_initial_plan_max_kib": {
+   "50": 217.6,
+   "100": 733.4,
+   "150": 1549.1,
+   "200": 2621.7
+  },
+  "dstar_plan_max_kib": {
+   "50": 132.8,
+   "100": 186.5,
+   "150": 272.2,
+   "200": 676.0
+  },
+  "dstar_update_max_kib": {
+   "50": 37.4,
+   "100": 47.4,
+   "150": 81.6,
+   "200": 40.8
+  },
+  "repair_bounded_max_kib": {
+   "50": 88.4,
+   "100": 91.8,
+   "150": 86.9,
+   "200": 86.0
+  },
+  "repair_unbounded_max_kib": {
+   "50": 149.4,
+   "100": 398.2,
+   "150": 1662.5,
+   "200": 1402.3
+  },
+  "dstar_state_kib": {
+   "50": 118.8,
+   "100": 619.6,
+   "150": 1436.5,
+   "200": 2391.4
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "min_n": 5,
+ "n_train_events": 20449,
+ "n_eval_events": 48422,
+ "train_seeds": [
+  0,
+  1,
+  2,
+  10,
+  11,
+  12,
+  20,
+  21,
+  22
+ ],
+ "eval_seeds": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29
+ ],
+ "cells_eval": 576,
+ "cells_both_splits": 576,
+ "in_sample_astar": {
+  "cells": 576,
+  "correct": 562,
+  "agreement": 0.9756944444444444,
+  "ci95_wilson": [
+   0.95961845949697,
+   0.9854674628813148
+  ],
+  "weighted_by_events": 0.967741935483871
+ },
+ "out_of_sample_astar": {
+  "cells": 576,
+  "correct": 513,
+  "agreement": 0.890625,
+  "ci95_wilson": [
+   0.8625017554511031,
+   0.9135724508814301
+  ],
+  "weighted_by_events": 0.907438767502375,
+  "errors_pred_repair_but_fallback_cheaper": 19,
+  "errors_pred_fallback_but_repair_cheaper": 44
+ },
+ "train_winner_baseline_astar": {
+  "cells": 576,
+  "correct": 508,
+  "agreement": 0.8819444444444444,
+  "ci95_wilson": [
+   0.8530286590966202,
+   0.9057994537618567
+  ],
+  "weighted_by_events": 0.9136549502292346
+ },
+ "abs_diff_p_star_astar_median": 0.007066363416336041,
+ "in_sample_dstar": {
+  "cells": 576,
+  "correct": 523,
+  "agreement": 0.9079861111111112,
+  "ci95_wilson": [
+   0.881601808238818,
+   0.928964585041828
+  ],
+  "weighted_by_events": 0.9235471479905828
+ },
+ "out_of_sample_dstar": {
+  "cells": 576,
+  "correct": 490,
+  "agreement": 0.8506944444444444,
+  "ci95_wilson": [
+   0.8192701634121243,
+   0.8774720129397499
+  ],
+  "weighted_by_events": 0.9066333484779645,
+  "errors_pred_repair_but_fallback_cheaper": 53,
+  "errors_pred_fallback_but_repair_cheaper": 33
+ },
+ "train_winner_baseline_dstar": {
+  "cells": 576,
+  "correct": 484,
+  "agreement": 0.8402777777777778,
+  "ci95_wilson": [
+   0.8081197148042795,
+   0.8679271493787272
+  ],
+  "weighted_by_events": 0.9167320639378794
+ },
+ "abs_diff_p_star_dstar_median": 0.032357603956030656,
+ "abs_diff_p_fail_median": 0.047491150332945486,
+ "policy_cost_vs_dstar_every_event": {
+  "dstar": {
+   "events_scored": 48422,
+   "always_fallback": 1.0,
+   "always_repair_first": 1.0660709404665933,
+   "break_even_oos_choice": 0.927426845801465,
+   "cell_oracle_eval": 0.921858882038589,
+   "train_winner_choice": 0.9280018857245248
+  },
+  "astar": {
+   "events_scored": 48422,
+   "always_fallback": 5.237241557535766,
+   "always_repair_first": 4.361387272468411,
+   "break_even_oos_choice": 4.25239024282903,
+   "cell_oracle_eval": 4.2348924625992534,
+   "train_winner_choice": 4.254065556447869
+  }
+ }
+}

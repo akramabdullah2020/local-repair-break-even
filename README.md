@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24428969.svg)](https://doi.org/10.5281/zenodo.24428969)
 
-Code and data for the paper **"When Does Local Path Repair Pay Off? A Break-Even Analysis of Local Repair versus Global and Incremental Replanning for Mobile Robots with a Limited Perception Range"**.
+Code and data for the study **"When Does Local Path Repair Pay Off? A Break-Even Analysis of Local Repair versus Global and Incremental Replanning for Mobile Robots with a Limited Perception Range"**.
 
 When a robot perceives a new obstacle on its path, it can repair the invalidated segment locally or replan to the goal (from scratch with A\*, or incrementally with D\* Lite). This repository contains:
 
@@ -42,10 +42,13 @@ fit_predictor.py         fit the failure predictor on the training split
 analyze_v2.py            statistics and figures
 run.py                   closed-loop benchmark on the original 5 scenarios
 scripts/download_movingai.py
+scripts/break_even_oos.py     out-of-sample check of the break-even condition
+scripts/measure_resources.py  run time and peak memory of each strategy
 tests/                   unit, differential and conservation tests
 results/v2_events/       raw event tables (pilot, training split, held-out split)
 results/v2_analysis/     tables, figures, summary.json
-paper/                   LaTeX source of the paper
+results/v2_oos/          out-of-sample break-even check
+results/v2_resources/    run-time and memory measurements
 ```
 
 ## Reproducing the results
@@ -66,6 +69,13 @@ python run_events.py --split eval --predictor results/v2_events/predictor.pkl --
 
 # Statistics and figures
 python analyze_v2.py --eval results/v2_events/full_eval --train results/v2_events/full_train
+
+# Out-of-sample check: break-even inputs estimated on the training split, scored on the held-out split
+python scripts/break_even_oos.py --train results/v2_events/full_train --eval results/v2_events/full_eval --out results/v2_oos
+
+# Run time and peak memory (held-out seed 3, 832 episodes; run on an otherwise idle machine)
+python scripts/measure_resources.py --mode runtime --out results/v2_resources
+python scripts/measure_resources.py --mode memory  --out results/v2_resources
 ```
 
 Seeds with `seed % 10 < 3` form the training split. Everything is deterministic given the seed except wall-clock timings. Each `metadata.json` records the SHA-256 of every source file used.
@@ -78,7 +88,7 @@ Moving AI maps are **not redistributed** here; `scripts/download_movingai.py` fe
 
 ## Citation
 
-See `CITATION.cff`. Archived at Zenodo: the version used for the paper is v1.0.1, DOI [10.5281/zenodo.24429438](https://doi.org/10.5281/zenodo.24429438); [10.5281/zenodo.24428969](https://doi.org/10.5281/zenodo.24428969) always resolves to the latest version.
+See `CITATION.cff`. Archived at Zenodo: the version used for the study is v1.0.1, DOI [10.5281/zenodo.24429438](https://doi.org/10.5281/zenodo.24429438); [10.5281/zenodo.24428969](https://doi.org/10.5281/zenodo.24428969) always resolves to the latest version.
 
 ## License
 
